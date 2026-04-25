@@ -3,7 +3,7 @@ const express = require("express");
 
 const app = express();
 
-const PORT = 3000;//we set a port
+const PORT = process.env.PORT || 3000; // ❌ do not remove this//we set a port
 
 const routes = require("./routes"); //import rotures
 
