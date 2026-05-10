@@ -36,10 +36,10 @@ DELETE http://localhost:3000/contacts/6a0002c9775faf514736d096
 
 ///////////////////////
 
-### Production GET all contacts
+### Render GET all contacts
 GET https://cse341-esteban.onrender.com/contacts
 
-### Production POST contact
+### Render POST contact
 POST https://cse341-esteban.onrender.com/contacts
 Content-Type: application/json
 
