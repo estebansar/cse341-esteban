@@ -31,3 +31,22 @@ Content-Type: application/json
 
 ### Delete contact - lesson 3
 DELETE http://localhost:3000/contacts/6a0002c9775faf514736d096
+
+
+
+///////////////////////
+
+### Production GET all contacts
+GET https://cse341-esteban.onrender.com/contacts
+
+### Production POST contact
+POST https://cse341-esteban.onrender.com/contacts
+Content-Type: application/json
+
+{
+  "firstName": "joseph",
+  "lastName": "Smith",
+  "email": "joseph.smith@gmail.com",
+  "favoriteColor": "gold",
+  "birthday": "2010-01-01"
+}
