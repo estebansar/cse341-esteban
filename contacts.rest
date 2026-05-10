@@ -18,7 +18,7 @@ Content-Type: application/json
 }
 
 ### Update contact - lesson 3
-PUT http://localhost:3000/contacts/PASTE_ID_HERE
+PUT http://localhost:3000/contacts/6a0002c9775faf514736d096
 Content-Type: application/json
 
 {
@@ -30,4 +30,4 @@ Content-Type: application/json
 }
 
 ### Delete contact - lesson 3
-DELETE http://localhost:3000/contacts/PASTE_ID_HERE
+DELETE http://localhost:3000/contacts/6a0002c9775faf514736d096
