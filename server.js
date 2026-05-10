@@ -5,6 +5,7 @@ const express = require("express");
 const { connectDB } = require("./db/connect");// lesson 2_connecing this to mongoDB
 
 const app = express();
+app.use(express.json()); // lesson 3: i will use this to allow Express to read JSON request bodies
 
 const PORT = process.env.PORT || 3000; //we set a port
 
