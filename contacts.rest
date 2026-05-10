@@ -3,3 +3,31 @@ GET http://localhost:3000/contacts
 
 ### Get single contact
 GET http://localhost:3000/contacts/69f67ab17e35b9854a1b6aaf
+
+
+### Create new contact - lesson 3
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Cirilo",
+  "lastName": "Rojas",
+  "email": "cirilo.rojas@gmail.com",
+  "favoriteColor": "blue",
+  "birthday": "1989-04-13"
+}
+
+### Update contact - lesson 3
+PUT http://localhost:3000/contacts/PASTE_ID_HERE
+Content-Type: application/json
+
+{
+  "firstName": "Cirilo",
+  "lastName": "Rojas",
+  "email": "cirilo.rojas25@example.com",
+  "favoriteColor": "green",
+  "birthday": "1998-04-13"
+}
+
+### Delete contact - lesson 3
+DELETE http://localhost:3000/contacts/PASTE_ID_HERE
