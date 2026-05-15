@@ -1,6 +1,10 @@
 const routes = require('express').Router();
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('../swagger.json');
 const temple = require('./temple');
 
+
+routes.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 routes.use('/temples', temple);
 routes.use(
   '/',
