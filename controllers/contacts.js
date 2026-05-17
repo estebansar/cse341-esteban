@@ -1,6 +1,6 @@
 
 const { connectDB } = require("../db/connect");
-const { ObjectId } = require("mongodb");  //lesson 3_ 
+const { ObjectId } = require("mongodb");  //lesson 3 POST request
 
 // GET all contacts
 const getAllContacts = async (req, res) => {
@@ -108,7 +108,7 @@ const deleteContact = async (req, res) => {
       .deleteOne({ _id: new ObjectId(id) });
 
     if (response.deletedCount > 0) {
-      res.status(200).json({ message: "delete successfully" });
+      res.status(200).json({ message: "Contact deleted successfully" });
     } else {
       res.status(500).json({ message: "Failed to delete" });
     }

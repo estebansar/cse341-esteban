@@ -7,7 +7,7 @@ const {
   getSingleContact,
   createContact, // lesson 3 POST
   updateContact, // lesson 3 PUT
-  deleteContact // lesson 3 DELETE  
+  deleteContact, // lesson 3 DELETE  
 } = require("../controllers/contacts"); // to myself: lets make sure this path is correct...
 
 
